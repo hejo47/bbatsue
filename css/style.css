@@ -8,6 +8,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ul, ol, li {
@@ -19,8 +20,114 @@ a {
   color: #333;
 }
 
+.header {
+  width: 100%;
+  height: 140px;
+  background-color: #B08D6A;
+}
+.header_top {
+  position: relative;
+}
+.header_top .logo {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%);
+}
+.header_top .logo img {
+  max-height: 60px;
+  height: 100%;
+}
+.header_top .top_menu {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.header_top .top_menu li a {
+  color: #FFF;
+  display: block;
+}
+.header_bottom .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  position: relative;
+}
+.header_bottom .container .all_menu {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+.header_bottom .container .all_menu a {
+  display: block;
+}
+.header_bottom .container .all_menu a i {
+  color: #FFF;
+  font-size: 30px;
+}
+.header_bottom .container .header_tool {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.header_bottom .container .header_tool li a {
+  display: block;
+}
+.header_bottom .container .header_tool li a i {
+  color: #FFF;
+  font-size: 30px;
+}
+.header_bottom .container nav.gnb {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header_bottom .container nav.gnb ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header_bottom .container nav.gnb ul li a {
+  display: block;
+  padding: 15px 30px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #FFF;
+  border-top: 1px solid #AAA;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
   padding: 0 20px;
+  margin: 0 auto;
+}
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }/*# sourceMappingURL=style.css.map */
