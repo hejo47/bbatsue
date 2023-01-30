@@ -106,11 +106,28 @@ a {
   align-items: center;
 }
 .header_bottom .container nav.gnb ul li a {
+  position: relative;
   display: block;
-  padding: 15px 30px;
+  padding: 25px 30px;
   color: #FFF;
   font-size: 20px;
   font-weight: 500;
+}
+.header_bottom .container nav.gnb ul li a::before {
+  width: 0%;
+  height: 3px;
+  background-color: #F8E49B;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: flex;
+  justify-items: center;
+  transition: 0.5s ease all;
+}
+.header_bottom .container nav.gnb ul li a:hover::before {
+  width: 100%;
+  left: 0;
 }
 
 .footer {
